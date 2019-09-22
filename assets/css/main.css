@@ -112,6 +112,16 @@ footer > ul > li:first-of-type  {
     width: 40px;
 }
 
+.container-title-subtitle > p:first-child{
+    font-size: 30px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+
+.container-title-subtitle > p:last-child{
+    font-size: 20px;
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.45);
+}
+
 /* Medidas estandar de margin y padding */
 
 .margin-top-lg  {
