@@ -80,6 +80,37 @@ nav > div > a:hover {
     border-radius: 5px;
 }
 
+footer  {
+    height: 200px;
+    width: 100%;
+    background-color: #24272a;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+ul  {
+    list-style-type: none;
+}
+
+footer > ul > li:first-of-type  {
+    font-size: 20px;
+}
+
+.social-media-container                 {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+.social-media-container > a > img       {
+    width: 30px;
+    padding: 0 10px 0 10px;
+}
+
+.social-media-container > a > img:hover {
+    width: 40px;
+}
 
 /* Medidas estandar de margin y padding */
 
