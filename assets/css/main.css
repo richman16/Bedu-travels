@@ -1,0 +1,32 @@
+*   {
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #24272a;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav > div > a   {
+    color: #fff;
+    text-decoration: none;
+    padding-right: 20px;
+}
+
+nav > div > a:hover {
+    color: red;
+}
+
+#bedu-logo  {
+    margin-left: 20px;
+    width: 50px;
+}
