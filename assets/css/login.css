@@ -1,0 +1,93 @@
+.forgot {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    background-color: lightsteelblue;
+}
+
+.message    {
+    font-size: 1.2rem;
+    background-color: #fff;
+    /* border: 1px solid lightgray;
+    border-radius: 15px; */
+    height: 400px;
+    padding: 30px;
+    width: 80%;;
+    display: grid;
+    column-gap: 50px;
+    /* grid-template-columns: auto auto auto; */
+    padding: 10px;
+    grid-template-areas:
+        '. h h h .'
+        '. f1 f1 f1 .'
+        '. . b . .';
+}
+
+.head   {
+    grid-area: h;
+    text-align: center;
+}
+
+h2  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boton{
+    grid-area: b;
+    font-size: 1.2rem;
+    height: 2.5rem;
+    width: 100%;
+    color: white;
+    background-color:limegreen;
+    margin: 0px;
+    border-radius: 5px;
+}
+.f1  {
+    grid-area: f1;
+}
+
+form {
+    display: block;
+    /* height: 50px; */
+}
+
+form > div > input{
+    /* display: block; */
+    background-color: transparent;
+    border: 0px solid;
+    color: #CCC;
+    outline: none;
+    width: 100%;
+    height: 2rem;
+    font-size: 1.5rem;
+}
+/* form > div > input:focus  {
+    outline: none;
+} */
+
+@media (min-width:320px) and (max-width:480px) {
+    .message{
+        font-size: 1rem;
+        text-align: center;
+        height: 60vh;
+        padding: 10px;
+        column-gap: 20px;
+        padding: 10px;
+        column-gap: 15px;
+        grid-template-areas:
+            'h h'
+            'f1 f1'
+            'b b';
+    }
+    .boton{
+        font-size: 1.2rem;
+        /* height: 2rem; */
+        width: 100%;
+    }
+    form > div > input{
+        width: 90%;
+    }
+    
+}
