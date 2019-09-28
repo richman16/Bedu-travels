@@ -72,10 +72,9 @@ form > div > input{
         font-size: 1rem;
         text-align: center;
         height: 60vh;
-        padding: 10px;
-        column-gap: 20px;
-        padding: 10px;
-        column-gap: 15px;
+        /* padding: 10px; */
+        /* column-gap: 20px; */
+        /* column-gap: 5px; */
         grid-template-areas:
             'h h'
             'f1 f1'
@@ -90,4 +89,60 @@ form > div > input{
         width: 90%;
     }
     
+}
+
+@media (min-width:481px) and (max-width:767px) {
+    .forgot {
+        display: inline-block;
+        height: 100%;
+        background-color: lightsteelblue;
+        width: 100%;
+    }
+
+    .message{
+        font-size: 1rem;
+        text-align: center;
+        height: 100vh;
+        /* height: 100%; */
+        width: 90%;
+        margin: 15px auto 15px;
+        /* margin-bottom: 100px; */
+        grid-template-areas:
+            'h h'
+            'f1 f1'
+            'b b';
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) and (orientation:landscape) {
+    .forgot {
+        /* display: inline-block; */
+        /* justify-content: center;
+        align-items: center;
+        height: 10vh; */
+        background-color: lightsteelblue;
+        height: 70vh;;
+    }
+    .message{
+        /* margin-top: 50px; */
+        font-size: 1rem;
+        text-align: center;
+        height: 300px;
+        grid-template-areas:
+            'h h h'
+            'f1 f1 f1'
+            '. b .';
+    }
+}
+
+@media (min-width:768px) and (max-width:1024px) {
+    .message{
+        font-size: 1rem;
+        text-align: center;
+        height: 300px;
+        grid-template-areas:
+            'h h h'
+            'f1 f1 f1'
+            '. b .';
+    }
 }
